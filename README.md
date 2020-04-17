@@ -164,5 +164,5 @@
 
 Если вы используете Anne Pro 2 и хотите попробовать описанную раскладку, то можете скачать один из профилей ниже и установить его через obinsKit.
 
-* [Профиль раскладки для Anne Pro 2 под macOS](./layouts/ap2_macOS.json)
-* [Профиль раскладки для Anne Pro 2 под Windows](./layouts/ap2_Windows.json)
+* [Профиль раскладки для Anne Pro 2 под macOS](https://github.com/astronautr/keyboard-layout/releases/download/v1.0.0/ap2_macOS.json)
+* [Профиль раскладки для Anne Pro 2 под Windows](https://github.com/astronautr/keyboard-layout/releases/download/v1.0.0/ap2_Windows.json)
