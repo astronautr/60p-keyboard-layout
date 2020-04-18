@@ -67,12 +67,16 @@
 <details>
   <summary>:national_park: <i>Основной вариант раскладки</i></summary>
   
+  <br>
+  
   ![Основная раскладка клавиш Fn1, Fn2, Enter](/img/fn.jpg)
   ![Раскладка клавиш на tap layer](/img/tap.jpg)
 </details>
 
 <details>
   <summary>:national_park: <i>Альтернативный вариант раскладки</i></summary>
+  
+  <br>
   
   ![Альтернативная раскладка клавиш Fn1, Fn2](/img/fn-alt.jpg)
 </details>
@@ -89,6 +93,8 @@
 <details>
   <summary>:national_park: Спойлер с раскладкой</summary>
   
+  <br>
+  
   ![Раскладка клавиш навигации](/img/navigation.jpg)
 </details>
 
@@ -99,6 +105,8 @@
 
 <details>
   <summary>:national_park: Спойлер с раскладкой</summary>
+  
+  <br>
   
   ![Раскладка клавиш редактирования](/img/editing.jpg)
 </details>
@@ -111,16 +119,20 @@
 <details>
   <summary>:national_park: Спойлер с раскладкой</summary>
   
+  <br>
+  
   ![Раскладка клавиш символов](/img/characters.jpg)
 </details>
 
 
 ### [:hammer_and_wrench: Дополнительные клавиши](./layout_table.md#дополнительные-клавиши)
 
-Для доступа к клавишам <kbd>F1</kbd>-<kbd>F12</kbd> хорошо подходит сочетание клавиш верхнего буквенного ряда <kbd>q</kbd>-<kbd>]</kbd> и клавиши <kbd>Fn2</kbd>.
+Для доступа к <kbd>F1</kbd>-<kbd>F12</kbd> хорошо подходит сочетание клавиш верхнего буквенного ряда <kbd>q</kbd>-<kbd>]</kbd> и клавиши <kbd>Fn2</kbd>.
 
 <details>
   <summary>:national_park: Спойлер с раскладкой</summary>
+  
+  <br>
   
   ![Раскладка клавиш f1-f12](/img/f1-f12.jpg)
 </details>
@@ -130,10 +142,12 @@
 
 <details>
   <summary>:national_park: Спойлер с раскладкой</summary>
-
+  
+  <br>
+  
   ![Основной слой](/img/result-default.jpg)
-  ![Слой Fn1](/img/result-Fn1.jpg)
-  ![Слой Fn2](/img/result-Fn2.jpg)
+  ![Слой Fn1](/img/result-fn1.jpg)
+  ![Слой Fn2](/img/result-fn2.jpg)
   ![Tap layer](/img/result-tap.jpg)
 </details>
 
