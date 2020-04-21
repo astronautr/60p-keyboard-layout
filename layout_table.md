@@ -34,8 +34,8 @@
 
 |Клавиша|Сочетание|
 |:-----:|:-------:|
-| <kbd>Delete</kbd> | <kbd>fn1</kbd> + <kbd>f</kbd> |
-| <kbd>Backspace</kbd> | <kbd>fn1</kbd> + <kbd>h</kbd> |
+| <kbd>Delete</kbd> | <kbd>fn1</kbd> + <kbd>h</kbd> |
+| <kbd>Backspace</kbd> | <kbd>fn1</kbd> + <kbd>f</kbd> |
 
 
 ## Символы
