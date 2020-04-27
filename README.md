@@ -25,7 +25,6 @@
      <kbd>F1</kbd>-<kbd>F12</kbd>
 * [Результат](#результат)
 * [Ссылки](#ссылки)
-* [Источники](#источники)
 
 
 ## Введение
@@ -114,7 +113,3 @@
 * [Профиль раскладки для Anne Pro 2 под Windows](https://github.com/astronautr/keyboard-layout/releases/download/v1.0.0/ap2_Windows.json)
 * [Профиль альтернативной раскладки для Anne Pro 2 под macOS](https://github.com/astronautr/keyboard-layout/releases/download/v1.0.0/ap2_macOS.json)
 * [Профиль альтернативной раскладки для Anne Pro 2 под Windows](https://github.com/astronautr/keyboard-layout/releases/download/v1.0.0/ap2_Windows.json)
-
-## Источники
-
-* Изображения раскладки [@sataset](https://github.com/sataset) × [@braindefender](https://github.com/braindefender).
