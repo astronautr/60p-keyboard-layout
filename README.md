@@ -1,4 +1,4 @@
-# Layout for 60% keyboard
+# Layout for a 60% keyboard
 
 A guide that describes how to create a comfortable layout for a 60% keyboard.
 
