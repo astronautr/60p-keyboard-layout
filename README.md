@@ -89,7 +89,8 @@ use <kbd>Fn1</kbd> + <kbd>i</kbd> to press <kbd>PageUp</kbd> and similar key com
 ### Text editing keys mapping
 
 <kbd>Delete</kbd> and <kbd>Backspace</kbd> keys are pretty far from the home row on both full-size and 60% boards.
-It's possible to fix it by moving them directly to the home row on <kbd>Fn1</kbd> layer.
+It's possible to fix it by moving them directly to the home row on <kbd>Fn1</kbd> layer. Also, to simplify access
+to <kbd>Enter</kbd> key you can map it to <kbd>Space</kbd> key location on <kbd>Fn1</kbd> layer. 
 
 ![Text editing keys mapping](./img/text-editing.png)
 
