@@ -1,62 +1,62 @@
-[Go to the article](README.md)
+[Перейти к статье](README_ru.md)
 
-## Functional keys mapping
+## Привязка функциональных клавиш
 
-**Main option**
+**Основной вариант**
 
-|Kep|Main Layer|Tap Layer|
+|Клавиша|Основной слой|Tap Layer|
 |:-----:|:-----------:|:--------:|
 | <kbd>fn1</kbd> | <kbd>Caps Lock</kbd> |-|
 | <kbd>fn2</kbd> | <kbd>Enter</kbd> |-|
 | <kbd>Enter</kbd> | - | <kbd>Enter</kbd> |
 
-**Alternative option**
+**Альтернативный вариант**
 
-|Key|Main Layer|
+|Клавиша|Основной слой|
 |:-----:|:----------:|
 | <kbd>fn1</kbd> | <kbd>Caps Lock</kbd> |
 | <kbd>fn2</kbd> | <kbd>Right Shift</kbd> |
 | <kbd>Enter</kbd> | <kbd>Enter</kbd> |
 
-## Navigation keys mapping
+## Привязка клавиш навигации
 
-**Main option**
+**Основной вариант**
 
-|Key|Keys Combination|Main Layer|
+|Клавиша|Сочетание|Основной слой|
 |:-----:|:-------:|:-----------:|
 | <kbd>Up</kbd> | <kbd>fn1</kbd> + <kbd>w</kbd> | <kbd>Right Shift</kbd> |
-| <kbd>Left</kbd> | <kbd>fn1</kbd> + <kbd>a</kbd> | <kbd>fn1</kbd> (original) |
-| <kbd>Down</kbd> | <kbd>fn1</kbd> + <kbd>s</kbd> | <kbd>fn2</kbd> (original) |
+| <kbd>Left</kbd> | <kbd>fn1</kbd> + <kbd>a</kbd> | <kbd>fn1</kbd> (изначальное) |
+| <kbd>Down</kbd> | <kbd>fn1</kbd> + <kbd>s</kbd> | <kbd>fn2</kbd> (изначальное) |
 | <kbd>Right</kbd> | <kbd>fn1</kbd> + <kbd>d</kbd> | <kbd>Right Ctrl</kbd> |
 | <kbd>PageUp</kbd> | <kbd>fn1</kbd> + <kbd>i</kbd> |-|
 | <kbd>PageDown</kbd> | <kbd>fn1</kbd> + <kbd>k</kbd> |-|
 | <kbd>Home</kbd> | <kbd>fn1</kbd> + <kbd>j</kbd> |-|
 | <kbd>End</kbd> | <kbd>fn1</kbd> + <kbd>l</kbd> |-|
 
-**Alternative option**
+**Альтернативный вариант**
 
-|Key|Keys Combination|Tap Layer|
+|Клавиша|Сочетание|Tap Layer|
 |:-----:|:-------:|:-------:|
 | <kbd>Up</kbd> | <kbd>fn1</kbd> + <kbd>w</kbd> | <kbd>Right Shift</kbd> |
-| <kbd>Left</kbd> | <kbd>fn1</kbd> + <kbd>a</kbd> | <kbd>fn1</kbd> (origin) |
-| <kbd>Down</kbd> | <kbd>fn1</kbd> + <kbd>s</kbd> | <kbd>fn2</kbd> (origin) |
+| <kbd>Left</kbd> | <kbd>fn1</kbd> + <kbd>a</kbd> | <kbd>fn1</kbd> (изначальное) |
+| <kbd>Down</kbd> | <kbd>fn1</kbd> + <kbd>s</kbd> | <kbd>fn2</kbd> (изначальное) |
 | <kbd>Right</kbd> | <kbd>fn1</kbd> + <kbd>d</kbd> | <kbd>Right Ctrl</kbd> |
 | <kbd>PageUp</kbd> | <kbd>fn1</kbd> + <kbd>i</kbd> |-|
 | <kbd>PageDown</kbd> | <kbd>fn1</kbd> + <kbd>k</kbd> |-|
 | <kbd>Home</kbd> | <kbd>fn1</kbd> + <kbd>j</kbd> |-|
 | <kbd>End</kbd> | <kbd>fn1</kbd> + <kbd>l</kbd> |-|
 
-## Text editing keys mapping
+## Привязка клавиш редактирования текста
 
-|Key|Keys Combination|
+|Клавиша|Сочетание|
 |:-----:|:-------:|
 | <kbd>Delete</kbd> | <kbd>fn1</kbd> + <kbd>h</kbd> |
 | <kbd>Backspace</kbd> | <kbd>fn1</kbd> + <kbd>f</kbd> |
 
 
-## Symbol keys mapping
+## Привязка клавиш символов
 
-|Key|Keys Combination|Macros|
+|Клавиша|Сочетание|Макрос|
 |:-----:|:-------:|:----:|
 | <kbd>,&lt;</kbd> | <kbd>fn1</kbd> + <kbd>q</kbd> |-|
 | <kbd>.&gt;</kbd> | <kbd>fn1</kbd> + <kbd>e</kbd> |-|
@@ -71,7 +71,7 @@
 |  <kbd>`~</kbd> | <kbd>fn1</kbd> + <kbd>Tab</kbd> |-|
 
 
-## Additional keys mapping
+## Привязка дополнительных клавиш
 
 |Клавиша|Сочетание|
 |:-----:|:-------:|

@@ -1,124 +1,138 @@
-# Раскладка для 60% клавиатуры
+# Layout for 60% keyboard
 
-Руководство, которое описывает создание раскладки для повседневного использования 60% клавиатуры.
+A guide that describes how to create a comfortable layout for a 60% keyboard.
 
-![Раскладка клавиатуры](./img/default-layer.png)
+In other languages: [Русский](./README_ru.md)
 
-## Оглавление
+![Keyboard layout](img/main-layer.png)
 
-* [Введение](#введение)
-  * [Для кого](#для-кого)
-  * [Что понадобится](#что-понадобится)
-* [Раскладка](#раскладка)
-    * [Переназначение функциональных клавиш](#переназначение-функциональных-клавиш)
+## Table of contents
+
+* [Introduction](#introduction)
+* [For whom](#for-whom)
+* [Requirements](#requirements)
+* [The Layout](#the-layout)
+    * [Functional keys mapping](#functional-keys-mapping)
     <kbd>Fn1</kbd> <kbd>Fn2</kbd>
-    * [Клавиши навигации](#клавиши-навигации)
-     <kbd>Up</kbd> <kbd>Down</kbd> <kbd>Left</kbd> <kbd>Right</kbd> <kbd>PageUp</kbd>
-     <kbd>PageDown</kbd> <kbd>End</kbd> <kbd>Home</kbd>
-    * [Клавиши редактирования текста](#клавиши-редактирования-текста)
-     <kbd>Backspace</kbd> <kbd>Delete</kbd> <kbd>Enter</kbd>
-    * [Клавиши Символов](#клавиши-символов)
-     <kbd>,&lt;</kbd> <kbd>.&gt;</kbd> <kbd>\\&#124;</kbd> <kbd>/?</kbd>
-     <kbd>=+</kbd> <kbd>-_</kbd> <kbd>\`~</kbd> <kbd>\[\{</kbd>
-     <kbd>\]\}</kbd> <kbd>\(</kbd> <kbd>\)</kbd>
-  * [Дополнительные клавиши](#дополнительные-клавиши)
-     <kbd>F1</kbd>-<kbd>F12</kbd>
-* [Результат](#результат)
-* [Ссылки](#ссылки)
+    * [Navigation keys mapping](#navigation-keys-mapping)
+    <kbd>Up</kbd> <kbd>Down</kbd> <kbd>Left</kbd> <kbd>Right</kbd> <kbd>PageUp</kbd>
+    <kbd>PageDown</kbd> <kbd>End</kbd> <kbd>Home</kbd>
+    * [Text editing keys mapping](#text-editing-keys-mapping)
+    <kbd>Backspace</kbd> <kbd>Delete</kbd> <kbd>Enter</kbd>
+    * [Symbol keys mapping](#symbol-keys-mapping)
+    <kbd>,&lt;</kbd> <kbd>.&gt;</kbd> <kbd>\\&#124;</kbd> <kbd>/?</kbd>
+    <kbd>=+</kbd> <kbd>-_</kbd> <kbd>\`~</kbd> <kbd>\[\{</kbd>
+    <kbd>\]\}</kbd> <kbd>\(</kbd> <kbd>\)</kbd>
+    * [Additional keys mapping](#additional-keys-mapping)
+    <kbd>F1</kbd>-<kbd>F12</kbd>
+* [The Result](#the-result)   
+* [Links](#links)
 
+## Introduction
 
-## Введение
+Most of the day I type: write code, chat in messengers, play video games. One day I realized I can't longer use my
+bulky full-size keyboard. Its long usage literally brings me pain. Every time I need to press <kbd>Up</kbd>,
+<kbd>End</kbd>, or any other key out of the home row (row of characters in the middle) I have to change the position
+of my right hand and move it back after I finish. The same issues when using the mouse.
 
-Значительную часть своего дня я печатаю — пишу код, общаюсь в мессенджерах, играю в видеоигры. В какой-то момент я понял что больше не могу пользоваться своей громоздкой клавиатурой — длительное использование такой клавиатуры начало доставлять мне физическую боль. Каждый раз для нажатия <kbd>Up</kbd>, <kbd>End</kbd>, или любой другой клавиши за пределом домашнего ряда (центральный буквенный ряд), приходится менять положение правой руки, а после возвращать её на место. То же самое касается перехода между клавиатурой и мышью.
+Transition to a 60% keyboard helped me to solve these issues - compact form-factor reduces the number of hands movements
+during typing or navigation around the document to a minimum. It also reduces the distance between the home row and mouse, simplifying the transition between them. However, I don't have a medical education, and **I don't guarantee that this will improve your well-being**.
 
-Переход на 60% клавиатуру помог мне решить эти проблемы — компактный форм-фактор сводит количество движений рук во время печати и навигации по документам к минимуму, так же уменьшая расстояние между домашним рядом клавиатуры и мышью, упрощая переключение между ними. В прочем, у меня нет медицинского образования и **я не берусь утверждать, что это положительно повлияет на ваше самочувствие**.
+## For whom
 
-### Для кого
+* You're going to buy a keyboard and not sure if 60% layout will suit
+* You already own such a keyboard and want to improve your layout
 
-* Вы присматриваете себе 60% клавиатуру и не уверены будет ли удобна раскладка
-* У вас уже есть такая клавиатура и вы хотите доработать свою раскладку
+## Requirements
 
-### Что понадобится
+* Programmable 60% keyboard
 
-* Программируемая 60% клавиатура
+For this guide, I'm going to use Anne Pro 2 in combination with [obinsKit](http://en.obins.net/obinskit).
 
-Я буду использовать Anne Pro 2 в сочетании с [obinsKit](http://en.obins.net/obinskit) для этого руководства. Ссылки на готовую раскладку для Anne Pro 2 и таблицы с привязками клавиш будут в [конце](#ссылки).
+[Layout for Anne Pro 2 and keys mapping table](#links).
 
+## The Layout
 
-## Раскладка
-
-Стоит упомянуть, что в раскладке отсутствуют следующие клавиши:
+Missing keys in this layout:
 
 * <kbd>Right Shift</kbd>
 * <kbd>Caps Lock</kbd>
 
-### Переназначение функциональных клавиш
+### Functional keys mapping
 
-В первую очередь нужно переназначить функциональные клавиши <kbd>Fn1</kbd> и <kbd>Fn2</kbd>. Это необходимо для удобного доступа к клавишам, которые недоступны на основном слое.
+First things first, we need to remap functional keys <kbd>Fn1</kbd> and <kbd>Fn2</kbd>. It's necessary for
+convenient access to keys that unavailable on the main layer.
 
-Наиболее удобным мне показалось назначить <kbd>Fn1</kbd> на место <kbd>Caps Lock</kbd>, а <kbd>Fn2</kbd> на место <kbd>Enter</kbd>. Если при этом вынести <kbd>Enter</kbd> на *tap layer*, то доступ к нему сохранится — при нажатии сработает клавиша <kbd>Enter</kbd>, при удержании сработает клавиша <kbd>Fn2</kbd>. Так же, для нажатия <kbd>Enter</kbd> довольно удобно использовать <kbd>Fn1</kbd> + <kbd>Space</kbd>.
+In my opinion, the most convenient way to do that is to map <kbd>Fn1</kbd> to the <kbd>Caps Lock</kbd> location and
+<kbd>Fn2</kbd> to the <kbd>Enter</kbd> location. If you also move <kbd>Enter</kbd> to *tap layer* then it
+will remain accessible - <kbd>Enter</kbd> will trigger if you tap on the key, <kbd>Fn2</kbd> will trigger if you press
+the key and hold it. If that seems too extreme for you, then alternatively you can map <kbd>Fn2</kbd> to the <kbd>Right Shift</kbd> location.
 
-[Таблица с привязкой функциональных клавиш](./layout_table.md#привязка-функциональных-клавиш).
+[Table with functional keys mapping](./layout_table.md#functional-keys-mapping).
+ 
+### Navigation keys mapping
 
-Далее будет подробно разобран каждый тип функционала на этих слоях.
+Due to the close location of <kbd>Caps Lock</kbd> to <kbd>w</kbd> <kbd>a</kbd> <kbd>s</kbd> <kbd>d</kbd>,
+<kbd>Fn1</kbd> + <kbd>w</kbd> key combination is very convenient for pressing <kbd>Up</kbd> with one hand.
 
-### Клавиши навигации
+Keys combination for the other arrow keys constructs similarly. Also, if you don't use keys in the lower right area
+(originally I have <kbd>Right Shift</kbd>, <kbd>Fn1</kbd>, <kbd>Fn2</kbd>, and <kbd>Right Ctrl</kbd> there), then you
+can put arrow keys there, so they and remain accessible on the main layer.
 
-Благодаря близкому расположению <kbd>Caps Lock</kbd> к клавишам <kbd>w</kbd> <kbd>a</kbd> <kbd>s</kbd> <kbd>d</kbd>, сочетание <kbd>Fn1</kbd> + <kbd>w</kbd> подходит для нажатия <kbd>Up</kbd> одной рукой.
+To press <kbd>PageUp</kbd> <kbd>PageDown</kbd> <kbd>End</kbd> <kbd>Home</kbd> you can use your right hand. For example,
+use <kbd>Fn1</kbd> + <kbd>i</kbd> to press <kbd>PageUp</kbd> and similar key combos for other keys of this section.
 
-Аналогично строятся сочетания для других клавиш-стрелочек. Так же, если вы не используете блок из четырёх клавиш в правом нижнем углу (в моём случае по умолчанию там находятся <kbd>Right Shift</kbd>, <kbd>Fn1</kbd>, <kbd>Fn2</kbd>, <kbd>Right Ctrl</kbd>), то можете расположить там клавиши стрелочки и сохранить к ним доступ на основном слое.
+![Navigation keys mapping](./img/navigation.png)
 
-Для нажатия клавиш <kbd>PageUp</kbd> <kbd>PageDown</kbd> <kbd>End</kbd> <kbd>Home</kbd> можно задействовать правую руку, например <kbd>Fn1</kbd> + <kbd>i</kbd> для <kbd>PageUp</kbd> и аналогично для других клавиш блока.
+[Table with navigation keys mapping](layout_table.md#navigation-keys-mapping)
 
-![Расположение клавиши навигации](./img/navigation.png)
+### Text editing keys mapping
 
-[Талица с привязкой клавиш навигации](./layout_table.md#привязка-клавиш-навигации)
+<kbd>Delete</kbd> and <kbd>Backspace</kbd> keys are pretty far from the home row on both full-size and 60% boards.
+It's possible to fix it by moving them directly to the home row on <kbd>Fn1</kbd> layer.
 
-### Клавиши редактирования текста
+![Text editing keys mapping](./img/text-editing.png)
 
-Клавиши <kbd>Delete</kbd> и <kbd>Backspace</kbd> находятся довольно далеко от домашнего ряда клавиатуры как на стандартных, так и на 60% клавиатурах. Это можно исправить, перенеся их на домашний ряд на слое <kbd>Fn1</kbd>.
+[Table with text editing keys mapping](layout_table.md#text-editing-keys-mapping)
 
-![Расположение клавиш редактирования текста](./img/text-editing.png)
+### Symbol keys mapping
 
-[Таблица с привязкой клавиш редактирования текста](./layout_table.md#привязка-клавиш-редактирования-текста)
+I also decided to simplify access to symbol keys and move the most used symbols closer to the home row. This should
+reduce the load on your pinky, which usually used to press at least 7 keys when using the 10 finger typing technique.
 
-### Клавиши Символов
+![Symbol keys mapping](./img/symbols.png)
 
-Я решил так же упростить доступ к символам и перенести их как можно ближе к домашнему ряду и снизить нагрузку на мизинец, которым приходится нажимать не менее 7 клавиш при использовании метода десятипальцевой печати.
+[Table with symbol keys mapping](layout_table.md#symbol-keys-mapping)
 
-![Расположение клавиш символов](./img/symbols.png)
+Here's the layout on <kbd>Fn1</kbd> layer after all of these changes:
 
-[Талица с привязкой клавиш символов](./layout_table.md#привязка-клавиш-символов)
+![Fn1 layer layout](./img/fn1-layer.png)
 
-В результате раскладка на слое <kbd>Fn1</kbd> выглядит так:
+### Additional keys mapping
 
-![Расположение клавиш на слое fn1](./img/fn1-layer.png)
+To access <kbd>F1</kbd>-<kbd>F12</kbd> it's convenient to use a key combination of <kbd>q</kbd>-<kbd>]</kbd> with <kbd>Fn2</kbd>.
 
-### Дополнительные клавиши
+![F1-F12 keys mapping](./img/fn2-layer.png)
 
-Для доступа к <kbd>F1</kbd>-<kbd>F12</kbd> хорошо подходит сочетание клавиш верхнего буквенного ряда <kbd>q</kbd>-<kbd>]</kbd> и клавиши <kbd>Fn2</kbd>.
+[Table with F1-F12 keys mapping](layout_table.md#additional-keys-mapping)
 
-![Расположение клавиш F1-F12](./img/fn2-layer.png)
-
-[Таблица с привязкой клавиш F1-F12](./layout_table.md#привязка-дополнительных-клавиш)
-
-## Результат
+## The Result
 
 <details>
-  <summary>:camera: Спойлер со всеми слоями раскладки</summary>
+  <summary>:camera: Spoiler with all layers layouts</summary>
   
   <br>
   
-  ![Расположение клавиш на основном слое](/img/default-layer.png)
-  ![Расположение клавиш на слое fn1](/img/fn1-layer.png)
-  ![Расположение клавиш на слое fn2](/img/fn2-layer.png)
-  ![Расположение клавиш на tap layer](/img/tap-layer.png)
+  ![Main layer keys mapping](/img/main-layer.png)
+  ![Fn1 layer keys mapping](/img/fn1-layer.png)
+  ![Fn2 layer keys mapping](/img/fn2-layer.png)
+  ![Tap layer keys mapping](/img/tap-layer.png)
 </details>
 
-## Ссылки
+## Links
 
-* [Таблицы с привязками клавиш](./layout_table.md)
-* [Профиль раскладки для Anne Pro 2 под macOS](https://github.com/astronautr/keyboard-layout/releases/download/v1.0.0/ap2_macOS.json)
-* [Профиль раскладки для Anne Pro 2 под Windows](https://github.com/astronautr/keyboard-layout/releases/download/v1.0.0/ap2_Windows.json)
-* [Профиль альтернативной раскладки для Anne Pro 2 под macOS](https://github.com/astronautr/keyboard-layout/releases/download/v1.0.0/ap2_macOS.json)
-* [Профиль альтернативной раскладки для Anne Pro 2 под Windows](https://github.com/astronautr/keyboard-layout/releases/download/v1.0.0/ap2_Windows.json)
+* [Keys mapping tables](layout_table.md)
+* [Anne Pro 2 macOS layout profile](https://github.com/astronautr/60p-keyboard-layout/releases/download/v1.1.0/ap2_macOS.json)
+* [Anne Pro 2 Windows layout profile](https://github.com/astronautr/60p-keyboard-layout/releases/download/v1.1.0/ap2_Windows.json)
+* [Anne Pro 2 macOS alternative layout profile](https://github.com/astronautr/60p-keyboard-layout/releases/download/v1.1.0/ap2_macOS_alternative.json)
+* [Anne Pro 2 Windows alternative layout profile](https://github.com/astronautr/60p-keyboard-layout/releases/download/v1.1.0/ap2_Windows_alternative.json)
