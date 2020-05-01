@@ -73,7 +73,7 @@
 
 ## Additional keys mapping
 
-|Клавиша|Сочетание|
+|Key|Keys Combination|
 |:-----:|:-------:|
 | <kbd>F1</kbd> | <kbd>fn2</kbd> + <kbd>q</kbd> |
 | <kbd>F2</kbd> | <kbd>fn2</kbd> + <kbd>w</kbd> |
