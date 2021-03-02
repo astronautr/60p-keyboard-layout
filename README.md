@@ -137,3 +137,42 @@ To access <kbd>F1</kbd>-<kbd>F12</kbd> it's convenient to use a key combination 
 * [Anne Pro 2 Windows layout profile](https://github.com/astronautr/60p-keyboard-layout/releases/download/v1.1.0/ap2_Windows.json)
 * [Anne Pro 2 macOS alternative layout profile](https://github.com/astronautr/60p-keyboard-layout/releases/download/v1.1.0/ap2_macOS_alternative.json)
 * [Anne Pro 2 Windows alternative layout profile](https://github.com/astronautr/60p-keyboard-layout/releases/download/v1.1.0/ap2_Windows_alternative.json)
+
+
+## Technical Notes
+In order to programmatically update bindings (or layout file formats, in the case that there is a breaking change in
+the ObinsKit software), run this snippet of code in a node.js environment:
+
+```
+// > npm install crc
+
+const { crc32 } = require('crc');
+
+const layout = {
+    "name": "Windows",
+    "device": 1,
+    "model": 5,
+    "type": "layout",
+    "data": {
+        "layer1": [41,30,31,32,33,34,35,36,37,38,39,45,46,42,43,20,26,8,21,23,28,24,12,18,19,47,48,49,192,4,22,7,9,10,11,13,14,15,51,52,193,225,29,27,6,25,5,17,16,54,55,56,82,224,227,226,44,230,80,81,79],
+        "layer2": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,53,54,82,55,49,0,0,56,75,46,0,0,0,0,192,80,81,79,42,0,76,74,78,77,45,0,193,0,0,0,47,0,0,0,48,0,0,0,0,0,0,0,40,0,0,0,0],
+        "layer3": [0,200,168,170,169,171,173,172,246,241,240,244,243,0,53,58,59,60,61,62,63,64,65,66,67,68,69,0,192,0,0,0,0,0,0,0,0,0,0,0,193,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+        "taps": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    "crc": "36c6df77" // this line acts as a hash of the file contents, preventing you from exporting a layout, editing it, then re-importing it
+};
+
+const expectedCrc = crc32(`${layout.name}|${layout.device}|${layout.model}|${layout.type}|${JSON.stringify(layout.data)}`).toString(16);
+const currentCrcColor = `\x1b[3${expectedCrc === layout.crc ? 2 : 1}m`;
+
+console.log(`
+    Expected CRC: ${expectedCrc}
+    Current CRC: ${currentCrcColor}${layout.crc}
+`);
+```
+
+where you replace the `layout` variable with the full contents of a modified layout JSON file. Inspect the
+output of the script, and if the expected CRC is not the same as the file, simply replace the `crc` field in your
+customized JSON with the expected CRC
+
+_Credit to u/moret1979 for [reverse-engineering this process](https://www.reddit.com/r/AnnePro/comments/fe774q/reverse_engineering_obinskit_layout_file/) 🙏_
